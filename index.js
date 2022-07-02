@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/products",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send("Homepage")
 })
 
