@@ -8,6 +8,10 @@ const app = express();
 
 app.use(express.json());
 
+app.get("/products",(req,res)=>{
+    res.send("Homepage")
+})
+
 app.get("/products", async (req, res) => {
     const products = await ProductModel.find()
     res.send(products)
